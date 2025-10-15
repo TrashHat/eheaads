@@ -1,0 +1,11 @@
+{
+  "client_id": "https://bcala06.github.io/bluesky-mastodon-crossposter/client-metadata.json",
+  "application_type": "native",
+  "client_name": "crossposter",
+  "redirect_uris": ["http://127.0.0.1:8080/callback"],
+  "grant_types": ["authorization_code", "refresh_token"],
+  "response_types": ["code"],
+  "scope": "atproto",
+  "dpop_bound_access_tokens": true,
+  "token_endpoint_auth_method": "none"
+}

@@ -1,0 +1,17 @@
+com\crossposter\controllers\MastodonController.class
+com\crossposter\controllers\CreatePostController.class
+com\crossposter\controllers\SettingsController.class
+com\crossposter\utils\HttpUtil.class
+com\crossposter\controllers\SceneManager.class
+com\crossposter\Main.class
+com\crossposter\services\AuthSession.class
+com\crossposter\controllers\BlueskyController.class
+com\crossposter\utils\LocalCallbackServer$CallbackResult.class
+com\crossposter\utils\LocalCallbackServer.class
+com\crossposter\services\ServiceRegistry.class
+com\crossposter\services\BlueskyClient.class
+com\crossposter\utils\PkceUtil.class
+com\crossposter\controllers\HomeController.class
+com\crossposter\services\MastodonClient.class
+com\crossposter\utils\DPoPUtil.class
+com\crossposter\services\MastodonClient$InstanceCredentials.class
