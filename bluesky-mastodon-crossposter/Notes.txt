@@ -1,0 +1,3 @@
+Missing content:
+- errors
+- authentication

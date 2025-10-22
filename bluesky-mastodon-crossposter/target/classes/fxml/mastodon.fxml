@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.crossposter.controllers.MastodonController">
+
+    <!-- Header -->
+    <top>
+        <HBox spacing="10" style="-fx-background-color: #556CFF; -fx-padding: 10;" alignment="CENTER_LEFT">
+            <children>
+                <ImageView fitHeight="40" preserveRatio="true"/>
+                <Label text="BMC Crossposter"
+                       onMouseClicked="#openHome"
+                       style="-fx-text-fill: white; -fx-font-size: 18px; -fx-font-weight: bold; -fx-cursor: hand;"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label text="Create Post"
+                       onMouseClicked="#openCreatePost"
+                       style="-fx-text-fill: white; -fx-font-size: 14px; -fx-cursor: hand; -fx-padding: 0 15 0 0;"/>
+                <Label text="Settings"
+                       onMouseClicked="#openSettings"
+                       style="-fx-text-fill: white; -fx-font-size: 14px; -fx-cursor: hand;"/>
+            </children>
+        </HBox>
+    </top>
+
+    <!-- Main Content -->
+    <center>
+        <VBox alignment="CENTER" spacing="20" style="-fx-padding: 40;">
+            <!-- Logo -->
+            <ImageView fitHeight="80" preserveRatio="true">
+                <image>
+                    <Image url="@../images/Mastodon_Logo.png"/>
+                </image>
+            </ImageView>
+
+            <Label text="Mastodon Authentication"
+                   style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+            <Label text="Enter your full Mastodon handle (e.g. user@mastodon.social)" 
+                    style="-fx-font-size: 12px; -fx-text-fill: gray;"/>
+
+            <TextField fx:id="mastodonHandleField"
+                       promptText="user@instance.com or instance.com"
+                       style="-fx-pref-width: 300;"/>
+
+            <Button text="Authenticate" onAction="#handleAuthentication"
+                    style="-fx-background-color: #556CFF; -fx-text-fill: white; -fx-background-radius: 5;"/>
+        </VBox>
+    </center>
+</BorderPane>
